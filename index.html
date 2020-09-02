@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="main">
+    <div class="article">
+      <div class="header">
+        <img src="./images/logo.svg" alt="Base Apparel Logo">
+      </div>
+      <div class="spacer mobile">
+        <img src="./images/hero-mobile.jpg" alt="Hero image">
+      </div>
+      <div class="coming-soon">
+        <div class="tagline pink">
+          <h1>We're</h1>
+        </div>
+        <div class="tagline">
+          <h1>coming</h1>
+        </div>
+        <div class="tagline">
+          <h1>soon</h1>
+        </div>
+      </div>
+
+      <div class="paragraph">
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+      </div>
+      <div class="signup">
+        <form onsubmit="return false;">
+          <input 
+            placeholder="Email Address" 
+            type="text" 
+            name="signup" 
+            id="form-input"
+            onfocus="resetError();"
+          >
+          <img class="error-enabled" src="./images/icon-error.svg" alt="Error Icon">
+          <input 
+            type="submit" 
+            value=">" 
+            id="form-submit"
+            onclick="validateEmail();"
+          >
+        </form>
+        <p class="error-enabled">
+          Please provide a valid email
+        </p>
+      </div>
+      <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://christill.net">Chris Till</a>.
+        </p>
+      </footer>
+    </div>
+    <div class="hero-img desktop">
+
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
